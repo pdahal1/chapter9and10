@@ -1,5 +1,7 @@
 package hi;
 
+import java.util.Scanner;
+
 public class Helloworld {
 public static void main(String[] args) {
 	Scanner Sc= new Scanner (System.in); 
@@ -7,15 +9,19 @@ public static void main(String[] args) {
 	System.out.println("Hello world");
 	System.out.println("Enter your username");
 	String UserName= Sc.nextLine(); 
-	if ( UserName= "Param"){
-	Password (); 
+	if ( UserName== "Param"){
+		System.out.println("enter your password");
+		String pw= Sc.nextLine();
+	Password (pw); 
+	} else {
+		System.out.println("your password don't match");
 	}
 	
 }
-	public static void Password(){
-	System.out.println("Please enter your password");
-		String Password = Sc.nextLine(); 
+	public static void Password(String password){
+	
 		if ( password.length()>6){
-		System.out.println("your password matches. ")}
+		System.out.println("your password matches. ");
 	}
 }
+	}
